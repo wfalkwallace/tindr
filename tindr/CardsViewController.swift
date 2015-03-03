@@ -40,11 +40,11 @@ class CardsViewController: UIViewController {
             cardImage.frame.origin.x = cardInitialCenter.x + translation.x
             cardImage.frame.origin.y = cardInitialCenter.y + translation.y
         case .Ended, .Cancelled:
-            println("ended")
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                self.cardImage.frame.origin = self.cardInitialCenter
+            })
         default:
             break
         }
-
-
     }
 }
