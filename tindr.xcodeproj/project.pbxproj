@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E6B513F21AA6700C00852C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B513F11AA6700C00852C9F /* AppDelegate.swift */; };
-		E6B513F41AA6700C00852C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B513F31AA6700C00852C9F /* ViewController.swift */; };
 		E6B513F71AA6700C00852C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B513F51AA6700C00852C9F /* Main.storyboard */; };
 		E6B513F91AA6700C00852C9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B513F81AA6700C00852C9F /* Images.xcassets */; };
 		E6B513FC1AA6700C00852C9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6B513FA1AA6700C00852C9F /* LaunchScreen.xib */; };
 		E6B514081AA6700D00852C9F /* tindrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514071AA6700D00852C9F /* tindrTests.swift */; };
+		E6B514121AA6710C00852C9F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514111AA6710C00852C9F /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		E6B513EC1AA6700C00852C9F /* tindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B513F01AA6700C00852C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B513F11AA6700C00852C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6B513F31AA6700C00852C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E6B513F61AA6700C00852C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6B513F81AA6700C00852C9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E6B513FB1AA6700C00852C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E6B514011AA6700D00852C9F /* tindrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tindrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B514061AA6700D00852C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B514071AA6700D00852C9F /* tindrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tindrTests.swift; sourceTree = "<group>"; };
+		E6B514111AA6710C00852C9F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				E6B513F11AA6700C00852C9F /* AppDelegate.swift */,
-				E6B513F31AA6700C00852C9F /* ViewController.swift */,
 				E6B513F51AA6700C00852C9F /* Main.storyboard */,
+				E6B514111AA6710C00852C9F /* CardsViewController.swift */,
 				E6B513F81AA6700C00852C9F /* Images.xcassets */,
 				E6B513FA1AA6700C00852C9F /* LaunchScreen.xib */,
 				E6B513EF1AA6700C00852C9F /* Supporting Files */,
@@ -212,8 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B513F41AA6700C00852C9F /* ViewController.swift in Sources */,
 				E6B513F21AA6700C00852C9F /* AppDelegate.swift in Sources */,
+				E6B514121AA6710C00852C9F /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

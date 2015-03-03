@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cards View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tindr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardsViewController" customModule="tindr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,139 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-a2-1bt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="dQz-wa-7Z6"/>
+                                    <constraint firstAttribute="width" constant="250" id="glP-UU-ejV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dQz-wa-7Z6"/>
+                                        <exclude reference="glP-UU-ejV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dQz-wa-7Z6"/>
+                                        <include reference="glP-UU-ejV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QxV-bt-Xhi" appends="YES" id="44a-8h-Ipk"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-1t-BI2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aXL-1t-BI2" secondAttribute="height" multiplier="640:216" id="sdq-CF-vDv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sdq-CF-vDv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sdq-CF-vDv"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-E9-woj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RQ0-E9-woj" secondAttribute="height" multiplier="640:130" id="nxv-Ut-2fb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nxv-Ut-2fb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="nxv-Ut-2fb"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="P2F-a2-1bt" secondAttribute="centerY" id="FMM-lM-Btx"/>
+                            <constraint firstItem="RQ0-E9-woj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fmw-ut-JV1"/>
+                            <constraint firstAttribute="centerX" secondItem="aXL-1t-BI2" secondAttribute="centerX" id="HDl-HA-gZc"/>
+                            <constraint firstAttribute="centerX" secondItem="P2F-a2-1bt" secondAttribute="centerX" id="PLS-RI-xjG"/>
+                            <constraint firstItem="aXL-1t-BI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Yfy-Aa-1rM"/>
+                            <constraint firstItem="RQ0-E9-woj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="axK-g9-4Pp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aXL-1t-BI2" secondAttribute="bottom" id="bS8-uP-8w6">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="RQ0-E9-woj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ikR-B8-Asx"/>
+                            <constraint firstAttribute="trailing" secondItem="aXL-1t-BI2" secondAttribute="trailing" constant="50" id="uKd-pA-fnC"/>
+                            <constraint firstAttribute="trailing" secondItem="RQ0-E9-woj" secondAttribute="trailing" id="vv9-Kx-VbZ"/>
+                            <constraint firstAttribute="centerX" secondItem="RQ0-E9-woj" secondAttribute="centerX" id="wtL-Pr-SW3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="P2F-a2-1bt"/>
+                                <exclude reference="aXL-1t-BI2"/>
+                                <exclude reference="RQ0-E9-woj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Fmw-ut-JV1"/>
+                                <exclude reference="axK-g9-4Pp"/>
+                                <exclude reference="ikR-B8-Asx"/>
+                                <exclude reference="vv9-Kx-VbZ"/>
+                                <exclude reference="wtL-Pr-SW3"/>
+                                <exclude reference="FMM-lM-Btx"/>
+                                <exclude reference="PLS-RI-xjG"/>
+                                <exclude reference="HDl-HA-gZc"/>
+                                <exclude reference="Yfy-Aa-1rM"/>
+                                <exclude reference="uKd-pA-fnC"/>
+                                <exclude reference="bS8-uP-8w6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="P2F-a2-1bt"/>
+                                <include reference="aXL-1t-BI2"/>
+                                <include reference="RQ0-E9-woj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Fmw-ut-JV1"/>
+                                <include reference="axK-g9-4Pp"/>
+                                <exclude reference="ikR-B8-Asx"/>
+                                <include reference="vv9-Kx-VbZ"/>
+                                <include reference="wtL-Pr-SW3"/>
+                                <include reference="FMM-lM-Btx"/>
+                                <include reference="PLS-RI-xjG"/>
+                                <include reference="HDl-HA-gZc"/>
+                                <include reference="Yfy-Aa-1rM"/>
+                                <include reference="uKd-pA-fnC"/>
+                                <include reference="bS8-uP-8w6"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="actionControlImage" destination="aXL-1t-BI2" id="nEi-MR-wWh"/>
+                        <outlet property="cardImage" destination="P2F-a2-1bt" id="amu-Tw-tja"/>
+                        <outlet property="menuBarImage" destination="RQ0-E9-woj" id="YDR-O4-TsZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="QxV-bt-Xhi">
+                    <connections>
+                        <action selector="didPanCard:" destination="BYZ-38-t0r" id="GfH-eF-VfD"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="xxD-Ca-Wqi"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
+    </resources>
 </document>

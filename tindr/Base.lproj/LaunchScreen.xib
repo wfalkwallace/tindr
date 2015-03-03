@@ -32,9 +32,23 @@
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="uD9-3j-qI6"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="wQl-1i-3Kh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="uD9-3j-qI6"/>
+                    <exclude reference="wQl-1i-3Kh"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="uD9-3j-qI6"/>
+                    <include reference="wQl-1i-3Kh"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
