@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DraggableImageView" customModule="tindr" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gsr-uj-g2j"/>
+                <outlet property="profileImageView" destination="HQi-Jm-3NI" id="tAT-tA-tpz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQi-Jm-3NI">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HQi-Jm-3NI" secondAttribute="bottom" id="1S6-pf-1AC"/>
+                <constraint firstAttribute="trailing" secondItem="HQi-Jm-3NI" secondAttribute="trailing" id="A4P-gz-qEd"/>
+                <constraint firstItem="HQi-Jm-3NI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DhT-IU-CmX"/>
+                <constraint firstAttribute="centerY" secondItem="HQi-Jm-3NI" secondAttribute="centerY" id="Pwb-Yg-fbc"/>
+                <constraint firstItem="HQi-Jm-3NI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dvg-Wm-cCG"/>
+                <constraint firstAttribute="centerX" secondItem="HQi-Jm-3NI" secondAttribute="centerX" id="xJe-ls-ejm"/>
+            </constraints>
+            <point key="canvasLocation" x="239" y="284"/>
+        </view>
+    </objects>
+</document>

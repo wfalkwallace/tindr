@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E617BBBA1AA7FFB100342FBB /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617BBB91AA7FFB100342FBB /* DraggableImageView.xib */; };
+		E617BBBC1AA7FFC500342FBB /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E617BBBB1AA7FFC500342FBB /* DraggableImageView.swift */; };
 		E6B513F21AA6700C00852C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B513F11AA6700C00852C9F /* AppDelegate.swift */; };
 		E6B513F71AA6700C00852C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B513F51AA6700C00852C9F /* Main.storyboard */; };
 		E6B513F91AA6700C00852C9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B513F81AA6700C00852C9F /* Images.xcassets */; };
@@ -14,7 +16,6 @@
 		E6B514081AA6700D00852C9F /* tindrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514071AA6700D00852C9F /* tindrTests.swift */; };
 		E6B514121AA6710C00852C9F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514111AA6710C00852C9F /* CardsViewController.swift */; };
 		E6B514141AA6765E00852C9F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514131AA6765E00852C9F /* ProfileViewController.swift */; };
-		E6B514161AA6771A00852C9F /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B514151AA6771A00852C9F /* DraggableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E617BBB91AA7FFB100342FBB /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
+		E617BBBB1AA7FFC500342FBB /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 		E6B513EC1AA6700C00852C9F /* tindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B513F01AA6700C00852C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B513F11AA6700C00852C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +42,6 @@
 		E6B514071AA6700D00852C9F /* tindrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tindrTests.swift; sourceTree = "<group>"; };
 		E6B514111AA6710C00852C9F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		E6B514131AA6765E00852C9F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		E6B514151AA6771A00852C9F /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +83,10 @@
 		E6B513EE1AA6700C00852C9F /* tindr */ = {
 			isa = PBXGroup;
 			children = (
+				E617BBB91AA7FFB100342FBB /* DraggableImageView.xib */,
 				E6B513F11AA6700C00852C9F /* AppDelegate.swift */,
+				E617BBBB1AA7FFC500342FBB /* DraggableImageView.swift */,
 				E6B513F51AA6700C00852C9F /* Main.storyboard */,
-				E6B514151AA6771A00852C9F /* DraggableImageView.swift */,
 				E6B514131AA6765E00852C9F /* ProfileViewController.swift */,
 				E6B514111AA6710C00852C9F /* CardsViewController.swift */,
 				E6B513F81AA6700C00852C9F /* Images.xcassets */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E617BBBA1AA7FFB100342FBB /* DraggableImageView.xib in Resources */,
 				E6B513F71AA6700C00852C9F /* Main.storyboard in Resources */,
 				E6B513FC1AA6700C00852C9F /* LaunchScreen.xib in Resources */,
 				E6B513F91AA6700C00852C9F /* Images.xcassets in Resources */,
@@ -220,7 +224,7 @@
 			files = (
 				E6B514141AA6765E00852C9F /* ProfileViewController.swift in Sources */,
 				E6B513F21AA6700C00852C9F /* AppDelegate.swift in Sources */,
-				E6B514161AA6771A00852C9F /* DraggableImageView.swift in Sources */,
+				E617BBBC1AA7FFC500342FBB /* DraggableImageView.swift in Sources */,
 				E6B514121AA6710C00852C9F /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +423,7 @@
 				E6B5140D1AA6700D00852C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6B5140E1AA6700D00852C9F /* Build configuration list for PBXNativeTarget "tindrTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				E6B514101AA6700D00852C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

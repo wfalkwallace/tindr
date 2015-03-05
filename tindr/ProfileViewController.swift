@@ -10,9 +10,14 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    var profileImageToSet: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        profileImage.image = profileImageToSet
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +25,15 @@ class ProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    @IBAction func didBack(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            return
+        })
+    }
+    
+    
     
 
     /*
